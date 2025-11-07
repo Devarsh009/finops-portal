@@ -150,7 +150,7 @@ export default function LoginPage() {
         <div className="text-center mb-6">
           <div className="inline-block mb-1">
             <Image
-              src="/kandco-symbol.png"
+              src="/symbol.png"
               alt="Company Logo"
               width={120}
               height={120}
