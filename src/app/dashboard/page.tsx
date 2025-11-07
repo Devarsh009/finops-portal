@@ -166,7 +166,7 @@ export default function DashboardPage() {
             <div className="flex items-center gap-4">
               <div className="flex-shrink-0">
                 <Image
-                  src="/ChatGPT Image Nov 7, 2025, 03_41_04 AM.png"
+                  src="/KandCo symbol.png"
                   alt="Company Logo"
                   width={64}
                   height={64}

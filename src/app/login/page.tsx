@@ -150,7 +150,7 @@ export default function LoginPage() {
         <div className="text-center mb-6">
           <div className="inline-block mb-1">
             <Image
-              src="/ChatGPT Image Nov 7, 2025, 03_41_04 AM.png"
+              src="/KandCo symbol.png"
               alt="Company Logo"
               width={120}
               height={120}
