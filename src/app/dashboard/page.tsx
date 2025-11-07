@@ -166,7 +166,7 @@ export default function DashboardPage() {
             <div className="flex items-center gap-4">
               <div className="flex-shrink-0">
                 <Image
-                  src="/KandCo symbol.png"
+                  src="/kandco-symbol.png"
                   alt="Company Logo"
                   width={64}
                   height={64}
