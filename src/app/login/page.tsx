@@ -156,6 +156,7 @@ export default function LoginPage() {
               height={120}
               className="object-contain mx-auto"
               priority
+              unoptimized
             />
           </div>
           <h1 className="text-2xl font-semibold text-white mb-1 tracking-tight">

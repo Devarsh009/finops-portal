@@ -171,7 +171,8 @@ export default function DashboardPage() {
                   width={64}
                   height={64}
                   className="object-contain"
-                  priority // Load logo immediately (above-the-fold content)
+                  priority
+                  unoptimized
                 />
               </div>
               <div>
