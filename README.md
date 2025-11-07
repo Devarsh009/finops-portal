@@ -368,41 +368,38 @@ If something doesn't work, here are some common issues and how to fix them:
 
 ## Screenshots
 
-Screenshots showing all the features are in the `screenshots/` directory. These help demonstrate what the application does without having to run it.
+Screenshots showing all the features are in the `Screenshots/` directory. These help demonstrate what the application does without having to run it.
 
 ### Login Page
-![Login Page with Test Account Buttons](./screenshots/login.png)
+![Login Page with Test Account Buttons](./Screenshots/login.png)
 
 ### Dashboard Overview
-![Dashboard with Spend Analytics Charts](./screenshots/dashboard-1.png)
+![Dashboard Overview](./Screenshots/dashboard-1.png)
 
-![Dashboard Overview](./screenshots/dashboard-2.png)
+![Dashboard with Spend Analytics Charts](./Screenshots/dashboard-2.png)
+
 
 ### Filters in Action
-![Filters - Date Range, Cloud, Team, Environment](./screenshots/filters.png)
+![Filters - Date Range, Cloud, Team, Environment](./Screenshots/filters.png.png)
 
 ### CSV Upload Interface
-![CSV Upload Interface](./screenshots/upload-interface.png)
+![CSV Upload Interface](./Screenshots/upload-interface.png)
 
 ### Upload Success
-![Upload Success Message](./screenshots/upload-success.png)
+![Upload Success Message](./Screenshots/upload-success.png)
 
 ### Savings Pipeline
-![Savings Pipeline List View](./screenshots/savings-pipeline.png)
+![Savings Pipeline List View](./Screenshots/savings-pipeline.png)
 
 ### Create/Edit Savings Idea
-![Create/Edit Savings Idea Form](./screenshots/savings-form.png)
+![Create/Edit Savings Idea Form](./Screenshots/savings-form.png)
 
 ### PR Helper
-![Generated PR Markdown](./screenshots/pr-markdown.png)
+![Generated PR Markdown](./Screenshots/pr-markdown.png)
 
 ### Viewer Role
-![Viewer Role with Read-Only Access (Upload Button Hidden)](./screenshots/viewer-role.png)
-
-## License
-
-This project is part of a coding assignment for K&Co.
+![Viewer Role with Read-Only Access (Upload Button Hidden)](./Screenshots/viewer-role.png)
 
 ## Contact
 
-For questions or issues, please refer to the assignment documentation.
+For questions or issues, please refer to the documentation.
