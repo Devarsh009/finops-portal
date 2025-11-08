@@ -22,7 +22,6 @@ const CartesianGrid = dynamic(
 );
 const BarChart = dynamic(() => import("recharts").then(m => m.BarChart), { ssr: false });
 const Bar = dynamic(() => import("recharts").then(m => m.Bar), { ssr: false });
-const Cell = dynamic(() => import("recharts").then(m => m.Cell), { ssr: false });
 //const Legend = dynamic(() => import("recharts").then(m => m.Legend), { ssr: false });
 
 type DailyPoint = { date: string; _sum: { cost_usd: string | number } };
@@ -314,37 +313,18 @@ export default function SpendSection() {
                       itemStyle={{ color: "#ffffff", fontSize: "13px", fontWeight: 600 }}
                     />
                     <defs>
-                      {byService.map((_, index) => {
-                        const gradients = [
-                          { start: "#3b82f6", end: "#2563eb" }, // Blue
-                          { start: "#10b981", end: "#059669" }, // Green
-                          { start: "#8b5cf6", end: "#7c3aed" }, // Purple
-                          { start: "#f59e0b", end: "#d97706" }, // Amber
-                          { start: "#ef4444", end: "#dc2626" }, // Red
-                        ];
-                        const gradient = gradients[index % gradients.length];
-                        const gradientId = `gradient-${index}`;
-                        return (
-                          <linearGradient key={gradientId} id={gradientId} x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0%" stopColor={gradient.start} stopOpacity={1} />
-                            <stop offset="100%" stopColor={gradient.end} stopOpacity={0.9} />
-                          </linearGradient>
-                        );
-                      })}
+                      <linearGradient id="barGradient" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stopColor="#3b82f6" stopOpacity={1} />
+                        <stop offset="100%" stopColor="#2563eb" stopOpacity={0.9} />
+                      </linearGradient>
                     </defs>
                     <Bar
                       dataKey="cost"
                       radius={[8, 8, 0, 0]}
                       animationDuration={1000}
                       animationBegin={0}
-                    >
-                      {byService.map((entry, index) => {
-                        const gradientId = `gradient-${index}`;
-                        return (
-                          <Cell key={`cell-${index}`} fill={`url(#${gradientId})`} />
-                        );
-                      })}
-                    </Bar>
+                      fill="url(#barGradient)"
+                    />
                   </BarChart>
                 </ResponsiveContainer>
               ) : (
